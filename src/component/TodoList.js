@@ -1,11 +1,10 @@
 import React from 'react'
-
 function TodoList(props) {
   return (
     <li className="list-item">
         {props.item}
         <span className='icons'>
-          <i class="fa-regular fa-trash-can"
+          <i class="fa fa-regular fa-trash-can"
           onClick={e=>{
           props.deleteItem(props.index)
           }}></i>
